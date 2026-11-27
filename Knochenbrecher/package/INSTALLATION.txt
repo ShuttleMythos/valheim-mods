@@ -1,0 +1,50 @@
+KNOCHENBRECHER - INSTALLATION
+=============================
+
+Voraussetzung: BepInEx ist schon installiert. Im Valheim-Ordner gibt es
+also den Ordner BepInEx\plugins.
+
+WICHTIG: Jeder Mitspieler muss das machen, auch der Host. Alle brauchen
+dieselbe Version. Wer den Mod nicht hat, kann der Welt nicht beitreten.
+
+
+1. Valheim-Ordner öffnen
+   In Steam: Rechtsklick auf Valheim -> Verwalten -> Lokale Dateien
+   durchsuchen.
+
+2. Jötunn installieren oder aktualisieren (mindestens Version 2.30.3)
+   - Seite öffnen: https://thunderstore.io/c/valheim/p/ValheimModding/Jotunn/
+   - Auf "Manual Download" klicken.
+   - Aus der heruntergeladenen ZIP die Datei Jotunn.dll in den Ordner
+     BepInEx\plugins kopieren. Eine ältere Jotunn.dll dabei ersetzen.
+
+3. Knochenbrecher installieren
+   - Im Ordner BepInEx\plugins einen neuen Ordner "Knochenbrecher" anlegen.
+   - Aus dieser ZIP diese zwei Dateien dort hineinkopieren:
+       Knochenbrecher.dll
+       knochenbrecher_icon.png
+   - Bei einem Update die alten Dateien einfach ersetzen.
+
+4. Valheim normal starten.
+
+
+So sieht es danach aus:
+
+   Valheim
+     BepInEx
+       plugins
+         Jotunn.dll
+         Knochenbrecher
+           Knochenbrecher.dll
+           knochenbrecher_icon.png
+
+
+Hat es geklappt?
+   - In der Schmiede (Stufe 2) gibt es den Knochenbrecher, sobald du die
+     Zutaten schon einmal aufgehoben hast:
+     20 Eisen, 10 Uralte Rinde, 5 Glibber, 1 Draugr-Trophäe.
+   - In der Datei BepInEx\LogOutput.log steht:
+     "Knochenbrecher {version} geladen – bereit zum Bonk."
+
+Mehr zum Hammer, zu den Einstellungen und zur Fehlersuche steht in der
+Datei README.md.

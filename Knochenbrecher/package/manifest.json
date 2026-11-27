@@ -1,0 +1,10 @@
+{
+  "name": "Knochenbrecher",
+  "version_number": "1.1.1",
+  "website_url": "https://github.com/ShuttleMythos/valheim-mods",
+  "description": "Ein riesiger Hammer mit Wucht- und Geisterschaden, gemacht um dem Knochenwanst (Bonemass) eins auf den Kopp zu geben.",
+  "dependencies": [
+    "denikson-BepInExPack_Valheim-5.4.2360",
+    "ValheimModding-Jotunn-2.30.3"
+  ]
+}
