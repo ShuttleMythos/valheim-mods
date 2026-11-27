@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- Führt src/HammerModel.cs unverändert außerhalb des Spiels aus (Unity-Klassen sind in Shim.cs nachgebaut). -->
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>disable</Nullable>
+    <AssemblyName>Knochenbrecher</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../../src/HammerModel.cs" Link="HammerModel.cs" />
+    <EmbeddedResource Include="../../src/Resources/hammer.bin" LogicalName="Knochenbrecher.hammer.bin" />
+  </ItemGroup>
+</Project>

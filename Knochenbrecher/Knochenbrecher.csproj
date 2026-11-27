@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="../build/ValheimMod.props" />
+  <PropertyGroup>
+    <AssemblyName>Knochenbrecher</AssemblyName>
+    <RootNamespace>Knochenbrecher</RootNamespace>
+    <!-- Die Versionsnummer setzt build.sh aus package/manifest.json -->
+    <Version>1.0.0</Version>
+  </PropertyGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="src/Resources/hammer.bin" LogicalName="Knochenbrecher.hammer.bin" />
+  </ItemGroup>
+</Project>
