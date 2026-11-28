@@ -1,0 +1,45 @@
+KNOCHENBRECHER - TESTEN OHNE SPIELFORTSCHRITT
+=============================================
+
+Mit dem Testmodus liegt der Knochenbrecher sofort im Inventar. Du brauchst
+dafür keine Schmiede und keine Zutaten.
+
+
+1. Mod installieren
+   Wie in der INSTALLATION.txt beschrieben.
+
+2. Testmodus einschalten
+   Die Datei ady.valheim.knochenbrecher.cfg aus diesem Ordner in den Ordner
+   Valheim\BepInEx\config kopieren. Liegt dort schon eine Datei mit diesem
+   Namen, kannst du sie ersetzen.
+
+3. Valheim starten
+   Eine neue Welt und einen neuen Charakter anlegen und allein hineingehen.
+   Sobald du in der Welt stehst, liegt der Knochenbrecher im Inventar und
+   es erscheint die Meldung "Testmodus: Der Knochenbrecher liegt in deinem
+   Inventar."
+
+4. Worauf du achten kannst
+   - Sieht der Hammer aus wie auf den Bildern? Glänzt das Metall?
+   - Liegt er richtig herum in der Hand (Kopf oben)?
+   - Passt das Symbol im Inventar?
+   - Wie fühlen sich Schlag und Reichweite an?
+
+
+Den Knochenwanst zum Testen herbeirufen (freiwillig)
+   - In Steam: Rechtsklick auf Valheim -> Eigenschaften -> Startoptionen,
+     dort eintragen: -console
+   - Im Spiel F5 drücken und nacheinander eingeben:
+       devcommands
+       god
+       spawn Bonemass
+     "god" macht dich unverwundbar. Bitte nur in einer Testwelt benutzen.
+
+
+Testmodus wieder ausschalten
+   In der Datei Valheim\BepInEx\config\ady.valheim.knochenbrecher.cfg die
+   Zeile "Testmodus = true" in "Testmodus = false" ändern.
+
+   Wichtig für das Spiel mit den anderen: Im Koop gilt die Einstellung des
+   Hosts. Ist der Testmodus beim Host an, bekommt jeder Spieler einen Hammer
+   geschenkt.

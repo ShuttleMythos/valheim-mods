@@ -10,11 +10,15 @@ STAGE=$(mktemp -d)
 cp package/manifest.json package/icon.png package/knochenbrecher_icon.png "$STAGE"/
 cp README.md "$STAGE"/README.md
 cp ../LICENSE "$STAGE"/LICENSE.txt
-# Kurzanleitung für den Windows-Editor: Versionsnummer einsetzen, Windows-Zeilenenden, UTF-8 mit BOM
-python3 - "$VERSION" "$STAGE/INSTALLATION.txt" <<'PY'
+# Textdateien für den Windows-Editor: Versionsnummer einsetzen, Windows-Zeilenenden, UTF-8 mit BOM
+mkdir -p "$STAGE/Testmodus"
+cp package/Testmodus/ady.valheim.knochenbrecher.cfg "$STAGE/Testmodus/"
+python3 - "$VERSION" "$STAGE" <<'PY'
 import sys
-text = open("package/INSTALLATION.txt", encoding="utf-8").read().replace("{version}", sys.argv[1])
-open(sys.argv[2], "w", encoding="utf-8-sig", newline="\r\n").write(text)
+version, stage = sys.argv[1:3]
+for name in ("INSTALLATION.txt", "Testmodus/TESTEN.txt"):
+    text = open("package/" + name, encoding="utf-8").read().replace("{version}", version)
+    open(stage + "/" + name, "w", encoding="utf-8-sig", newline="\r\n").write(text)
 PY
 cp bin/Release/net48/Knochenbrecher.dll "$STAGE"/
 

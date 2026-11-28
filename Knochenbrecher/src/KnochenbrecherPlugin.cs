@@ -23,7 +23,7 @@ namespace Knochenbrecher
     {
         public const string PluginGuid = "ady.valheim.knochenbrecher";
         public const string PluginName = "Knochenbrecher";
-        public const string PluginVersion = "1.1.1";
+        public const string PluginVersion = "1.2.0";
 
         internal const string PrefabName = "SledgeKnochenbrecher";
         internal const string ItemToken = "$item_knochenbrecher";
@@ -43,6 +43,7 @@ namespace Knochenbrecher
         private ConfigEntry<float> _rangeMultiplier;
         internal static ConfigEntry<float> BonemassMultiplier;
         internal static ConfigEntry<bool> BonkMessage;
+        internal static ConfigEntry<bool> TestMode;
         private ConfigEntry<string> _recipe;
         private ConfigEntry<string> _upgradeRecipe;
         private ConfigEntry<int> _forgeLevel;
@@ -104,6 +105,9 @@ namespace Knochenbrecher
                 new ConfigDescription("Zutaten pro Aufwertung als Liste 'Prefab:Anzahl,…'.", null, admin));
             _customModel = Config.Bind("4 - Aussehen", "Eigenes Modell", true,
                 "Verwendet das verzierte Silber-Gold-Modell. Aus = Aussehen des Eisenvorschlaghammers. Wirkt nach Neustart.");
+            TestMode = Config.Bind("5 - Test", "Testmodus", false,
+                new ConfigDescription("Legt jedem Spieler beim Betreten der Welt einen Knochenbrecher ins Inventar, falls er keinen hat. " +
+                                      "Zum Ausprobieren ohne Spielfortschritt. Im Koop gilt die Einstellung des Hosts.", null, admin));
             _flipModel = Config.Bind("4 - Aussehen", "Modell umdrehen", false,
                 "Einschalten, falls der Hammer verkehrt herum in der Hand liegt (Kopf unten). Wirkt nach Neustart.");
 
@@ -119,12 +123,14 @@ namespace Knochenbrecher
                 { "item_knochenbrecher", "Knochenbrecher" },
                 { "item_knochenbrecher_desc", "Ein gewaltiger Hammer, wie geschaffen, um dem Knochenwanst eins auf den Kopp zu geben." },
                 { "knochenbrecher_bonk", "BONK!" },
+                { "knochenbrecher_testmode", "Testmodus: Der Knochenbrecher liegt in deinem Inventar." },
             });
             loc.AddTranslation("English", new Dictionary<string, string>
             {
                 { "item_knochenbrecher", "Bonebreaker" },
                 { "item_knochenbrecher_desc", "A massive hammer, made for giving Bonemass a good whack on the head." },
                 { "knochenbrecher_bonk", "BONK!" },
+                { "knochenbrecher_testmode", "Test mode: the Bonebreaker is in your inventory." },
             });
         }
 

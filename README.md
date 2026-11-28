@@ -6,7 +6,7 @@ Valheim Mods für die Zockerrunde
 
 | Mod | Was er macht | Version | Download |
 |---|---|---|---|
-| [Knochenbrecher](Knochenbrecher/) | Riesiger Hammer aus Silber, Gold und Edelsteinen, gemacht um dem Knochenwanst eins auf den Kopp zu geben | 1.1.1 | [ZIP](Knochenbrecher/dist/Knochenbrecher-1.1.1.zip) |
+| [Knochenbrecher](Knochenbrecher/) | Riesiger Hammer aus Silber, Gold und Edelsteinen, gemacht um dem Knochenwanst eins auf den Kopp zu geben | 1.2.0 | [ZIP](Knochenbrecher/dist/Knochenbrecher-1.2.0.zip) |
 
 ![Der Knochenbrecher](Knochenbrecher/docs/hammer_kopf.png)
 
