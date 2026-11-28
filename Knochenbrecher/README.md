@@ -54,7 +54,7 @@ Voraussetzung: **BepInEx** ist schon installiert, im Valheim-Ordner gibt es also
    - Aus dem heruntergeladenen ZIP die Datei `Jotunn.dll` nach `Valheim/BepInEx/plugins/` kopieren.
 3. **Knochenbrecher installieren:**
    - In `Valheim/BepInEx/plugins/` einen Ordner `Knochenbrecher` anlegen.
-   - Aus `Knochenbrecher-1.1.1.zip` die Dateien `Knochenbrecher.dll` und `knochenbrecher_icon.png`
+   - Aus `Knochenbrecher-1.2.0.zip` die Dateien `Knochenbrecher.dll` und `knochenbrecher_icon.png`
      dort hineinkopieren.
 4. Valheim normal starten.
 
@@ -72,7 +72,7 @@ Valheim/
 
 **Ob es geklappt hat:**
 
-- In `Valheim/BepInEx/LogOutput.log` steht die Zeile `Knochenbrecher 1.1.1 geladen – bereit zum Bonk.`
+- In `Valheim/BepInEx/LogOutput.log` steht die Zeile `Knochenbrecher 1.2.0 geladen – bereit zum Bonk.`
 - In der Schmiede (Stufe 2) taucht der Knochenbrecher bei den Waffen auf, sobald du die Zutaten schon
   einmal aufgehoben hast.
 - Zum schnellen Testen in einer Testwelt: Konsole mit `F5` öffnen, `devcommands` eingeben, dann
@@ -90,6 +90,15 @@ alle Mitspieler übertragen. Es reicht also, wenn der Host die Datei anpasst. Nu
 
 Rezept-Zutaten werden mit ihrem internen Namen angegeben, z. B. `Iron`, `ElderBark`, `Guck`,
 `TrophyDraugr`, `Bronze`, `Wood`, `FineWood`.
+
+## Testmodus
+
+Zum Ausprobieren ohne Spielfortschritt: Steht in der Konfigurationsdatei unter `5 - Test` der Eintrag
+`Testmodus = true`, bekommt jeder Spieler beim Betreten der Welt einen Knochenbrecher ins Inventar,
+falls er noch keinen hat. In der ZIP liegt dafür im Ordner `Testmodus` eine fertige
+Konfigurationsdatei samt Anleitung (`TESTEN.txt`).
+
+Im Koop gilt die Einstellung des Hosts. Für das normale Spiel bleibt der Testmodus aus.
 
 ## Aussehen
 
